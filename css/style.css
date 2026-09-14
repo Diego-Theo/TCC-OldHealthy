@@ -1,0 +1,135 @@
+.header-my {
+    background-image: url(../images/21067.png);
+    min-height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.menu {
+    background-color: rgba(245, 243, 243, 0.753);
+}
+
+.menu form {
+    background-color: transparent;
+    border-radius: 15px;
+    border: 1px solid #51bab2;
+    transition: 0.3s;
+}
+
+.botao-menu a {
+    text-decoration: none;
+    color: #51bab2;
+    transition: 0.3s;
+}
+
+.menu form:hover {
+    background-color: #51bab2 !important;
+}
+
+.menu form:hover a {
+    color: white !important;
+    font-weight: 300;
+}
+
+.itens-menu{
+    margin-left: 20px;
+}
+
+.itens-menu a {
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+
+.itens-menu li a{
+    color: #036485dc ;
+}
+.inicio,
+.projeto,
+.funcionalidade,
+.tecnologia,
+.equipe,
+.contato {
+    transition: 0.5s;
+}
+
+.inicio:hover,
+.projeto:hover,
+.funcionalidade:hover,
+.tecnologia:hover,
+.equipe:hover,
+.contato:hover {
+    scale: 1.05;
+    color: #036485dc;
+}
+
+.logo {
+    color: #036485dc;
+    font-weight: bold;
+}
+
+.logo:hover{
+    color: #036485dc;
+}
+
+
+.cta {
+    min-height: 80dvh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 115px;
+}
+
+.cta h1 {
+    color: #087ba1cb;
+    font-size: 80px;
+}
+
+.cta span {
+    color: #51bab2;
+}
+
+.cta h1 span {
+    display: block;
+}
+
+.cta h2 {
+    font-weight: 400;
+    color: #036485dc;
+}
+
+.botao-projeto {
+    background-color: #51bab2;
+    color: white;
+    width: 45%;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.botao-aplicativo {
+    background-color: white;
+    border: 1px solid #51bab2;
+    color: #51bab2;
+    width: 45%;
+    border-radius: 30px;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.botao-projeto:hover{
+    transition: .5s;
+    scale: 1.1;
+}
+
+.botao-aplicativo:hover{
+    transition: .5s;
+    scale: 1.1;
+}
+
+section{
+    min-height: 100dvh;
+}
