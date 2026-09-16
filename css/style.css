@@ -14,18 +14,18 @@
 .menu form {
     background-color: transparent;
     border-radius: 15px;
-    border: 1px solid #51bab2;
+    border: 1px solid #309b92;
     transition: 0.3s;
 }
 
 .botao-menu a {
     text-decoration: none;
-    color: #51bab2;
+    color: #309b92;
     transition: 0.3s;
 }
 
 .menu form:hover {
-    background-color: #51bab2 !important;
+    background-color: #309b92 !important;
 }
 
 .menu form:hover a {
@@ -88,7 +88,7 @@
 }
 
 .cta span {
-    color: #51bab2;
+    color: #309b92;
 }
 
 .cta h1 span {
@@ -101,7 +101,7 @@
 }
 
 .botao-projeto {
-    background-color: #51bab2;
+    background-color: #309b92;
     color: white;
     width: 45%;
     border-radius: 30px;
@@ -112,8 +112,8 @@
 
 .botao-aplicativo {
     background-color: white;
-    border: 1px solid #51bab2;
-    color: #51bab2;
+    border: 1px solid #309b92;
+    color: #309b92;
     width: 45%;
     border-radius: 30px;
     justify-content: center;
@@ -132,4 +132,36 @@
 
 section{
     min-height: 100dvh;
+}
+
+.section-funcionalidade{
+    background-image: url(../images/imagem2.png);
+    min-height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.texto-funcionalidade-esquerda h4 span{
+    display: block;
+}
+
+.texto-funcionalidade-esquerda h6{
+    color: #07ffffc9 ;
+}
+
+.texto-funcionalidade-esquerda p{
+    width: 45%;
+    color: rgba(255, 255, 255, 0.527);
+}
+
+.texto-funcionalidade-direita{
+    width: 90%;
+    position: relative;
+    bottom: 50px;
+}
+
+.texto-funcionalidade-direita h4{
+    color: #07ffffc9;
 }

@@ -14,7 +14,7 @@
 </head>
 
 <body>
-  <header class="header-my">
+  <header class="header-my" id="inicio">
     <nav class="navbar navbar-expand-lg menu">
       <div class="container my-3">
         <a class="navbar-brand logo" href="#"> <i class="bi bi-heart-pulse"></i> OldHealthy</a>
@@ -36,11 +36,11 @@
             <li class="nav-item">
               <a class="nav-link tecnologia" href="#tecnologia">Tecnologia</a>
             </li>
-            <li class="nav-item equipe">
-              <a class="nav-link" href="#equipe">Equipe</a>
+            <li class="nav-item">
+              <a class="nav-link equipe" href="#equipe">Equipe</a>
             </li>
             <li class="nav-item contato">
-              <a class="nav-link" href="#contato">Contato</a>
+              <a class="nav-link contato" href="#contato">Contato</a>
             </li>
 
           </ul>
@@ -65,17 +65,38 @@
   </header>
 
   <main>
-
-    <section id="inicio" class="">inicio</section>
     <section id="projeto" class="">projeto</section>
-    <section id="funcionalidade" class="">funcionalidade</section>
+    <section id="funcionalidade" class="section-funcionalidade">
+      <div class="texto-funcionalidade-esquerda p-3 ms-5">
+        <h6>EMERGÊNCIA</h6>
+        <h4 class="text-light">Quando precisar,<span class="text-light"> a ajuda está a um toque.</span></h4>
+        <p>O botão de emergência foi desenvolvido para facilitar o acesso à ajuda em situações que exigem atenção imediata</p>
+      </div>
+
+      <div class="texto-funcionalidade-direita align-items-end d-flex flex-column ">
+        <div class="w-25">
+        <h4><i class="bi bi-1-circle"></i> Toque no SOS</h4>
+        <p class="text-light">Clique no botão de emergência no aplicativo.</p>
+        </div>
+
+        <div class="mt-4 w-25">
+        <h4><i class="bi bi-2-circle"></i> Confirme a emergência</h4>
+        <p class="text-light">Confirme a solicitação de ajuda na tela de confirmação.</p>
+        </div>
+
+        <div class="mt-4 w-25">
+        <h4><i class="bi bi-3-circle"></i> Ligação automática</h4>
+        <p class="text-light">Após a confirmação, o aplicativo liga imediatamente para o contato de emegência cadastrado</p>
+        </div>
+
+      </div>
+
+    </section>
     <section id="tecnologia" class="">tecnologia</section>
     <section id="equipe" class="">equipe</section>
     <section id="contato" class="" >contato</section>
 
   </main>
-
-
 
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
