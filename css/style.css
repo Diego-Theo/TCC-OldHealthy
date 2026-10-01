@@ -45,7 +45,7 @@
 .itens-menu li a{
     color: #036485dc ;
 }
-.inicio,
+
 .projeto,
 .funcionalidade,
 .tecnologia,
@@ -54,7 +54,6 @@
     transition: 0.5s;
 }
 
-.inicio:hover,
 .projeto:hover,
 .funcionalidade:hover,
 .tecnologia:hover,
@@ -165,3 +164,234 @@ section{
 .texto-funcionalidade-direita h4{
     color: #07ffffc9;
 }
+
+/* ========================= */
+/* SEÇÃO PROJETO */
+/* ========================= */
+
+.projeto-section {
+    min-height: 100dvh;
+    background-color: #eaf9fa;
+}
+
+
+/* ========================= */
+/* PARTE SUPERIOR */
+/* ========================= */
+
+
+
+
+/* ========================= */
+/* TÍTULO PEQUENO */
+/* ========================= */
+
+.titulo h1 span{
+    display: block;
+}
+
+.titulo-pequeno {
+    display: flex;
+    align-items: center;
+
+    color: #55aaa9;
+
+    font-size: 0.65rem;
+    font-weight: 600;
+
+    letter-spacing: 0.15rem;
+
+    margin-bottom: 2%;
+}
+
+.titulo-pequeno span {
+    display: inline-block;
+
+    width: 10%;
+    height: 0.1rem;
+
+    background-color: #55aaa9;
+
+    margin-right: 3%;
+}
+
+
+/* ========================= */
+/* TÍTULO PRINCIPAL */
+/* ========================= */
+
+.projeto-section h1 {
+    color: #036485;
+
+    font-size: 2.4rem;
+
+    font-weight: 700;
+
+    line-height: 1.05;
+
+    margin-bottom: 4%;
+}
+
+.projeto-section h1 span {
+    color: #309b92;
+}
+
+.projeto-section p {
+    color: #4e8290;
+
+    font-size: 0.75rem;
+
+    line-height: 1.6;
+
+    max-width: 90%;
+}
+
+
+/* ========================= */
+/* CITAÇÃO + IMAGEM */
+/* ========================= */
+
+.div-citacao{
+    width: 58%;
+}
+
+.citacao {
+    position: relative;
+
+    width: 100%;
+    min-height: 50vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding-left: 15px;
+
+    background-image: url("../images/imagem-fundo-projeto.png");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.aspas {
+    font-size: 3rem;
+
+    font-weight: bold;
+
+    color: #65c6c4;
+
+    line-height: 0.5;
+}
+
+.citacao p {
+    color: #4e8290;
+
+    font-size: 1rem;
+
+    font-style: italic;
+
+    line-height: 1.4;
+
+    width: 75%;
+
+    margin: 2% 0 5%;
+}
+
+.citacao p span{
+    display: block;
+}
+
+.linha-citacao {
+    width: 15%;
+
+    height: 0.1rem;
+
+    background-color: #55aaa9;
+}
+
+
+/* ========================= */
+/* NOSSA PROPOSTA */
+/* ========================= */
+
+.proposta {
+    padding-top: 1%;
+    padding-bottom: 2%;
+}
+
+.proposta-texto h2 {
+    color: #036485;
+
+    font-size: 1.45rem;
+
+    line-height: 1.15;
+
+    font-weight: 600;
+
+    margin-bottom: 4%;
+}
+
+.proposta-texto p {
+    font-size: 0.7  5rem;
+
+    line-height: 1.5;
+
+    color: #568391;
+
+    max-width: 90%;
+}
+
+.proposta-texto h2 span{
+    display: block;
+}
+
+
+/* ========================= */
+/* CARDS */
+/* ========================= */
+
+
+.icone-card {
+    width: 3rem;
+    height: 3rem;
+
+    border-radius: 50%;
+
+    background-color: rgba(221, 247, 247, 0.8);
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 8%;
+}
+
+.icone-card i {
+    color: #55aaa9;
+
+    font-size: 1.4rem;
+}
+
+.proposta-card h4 {
+    color: #036485;
+
+    font-size: 0.95rem;
+
+    font-weight: 700;
+
+}
+
+.proposta-card p {
+    color: #568391;
+
+    font-size: 0.75rem;
+
+    line-height: 1.5;
+
+    max-width: 90%;
+}
+
+
+
