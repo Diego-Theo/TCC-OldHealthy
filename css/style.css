@@ -393,5 +393,324 @@ section{
     max-width: 90%;
 }
 
+/* SEÇÃO TECNOLOGIA */
+
+.tecnologia-section {
+    background: linear-gradient(180deg, #f4fcfc 0%, #ffffff 100%);
+    min-height: 100dvh;
+    position: relative;
+    overflow: hidden;
+    padding: 6rem 0;
+}
+
+/* Elementos gráficos de fundo para eliminar a sensação de vazio */
+
+.tecnologia-section .container {
+    position: relative;
+    z-index: 1;
+}
+
+.tecnologia-section .titulo-pequeno {
+    color: #309b92 !important;
+    font-weight: 700;
+}
+
+.tecnologia-section .titulo-pequeno span {
+    background-color: #309b92 !important;
+}
+
+.titulo-tec {
+    color: #036485 !important;
+    font-weight: 800;
+    letter-spacing: -0.025em;
+    line-height: 1.15;
+}
+
+.titulo-tec span {
+    background: linear-gradient(135deg, #309b92 0%, #036485 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+}
+
+.fs-6 {
+    color: #4e8290 !important;
+    line-height: 1.7;
+    max-width: 90%;
+    font-weight: 400;
+}
+
+/* CARDS DE PILARES TECNOLÓGICOS */
+
+.card-tecnologia {
+    background: #ffffff;
+    border: 1px solid rgba(48, 155, 146, 0.15) !important;
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    box-shadow: 0 10px 30px rgba(3, 100, 133, 0.04) !important;
+}
 
 
+.card-tecnologia::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(90deg, #309b92, #036485);
+    opacity: 0.4;
+    transition: opacity 0.3s ease;
+}
+
+.card-tecnologia:hover {
+    transform: translateY(-10px);
+    border-color: rgba(48, 155, 146, 0.4) !important;
+    box-shadow: 0 20px 40px rgba(48, 155, 146, 0.12) !important;
+}
+
+.card-tecnologia:hover::before {
+    opacity: 1;
+}
+
+.card-tecnologia .icone-card {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 16px;
+    background: linear-gradient(135deg, rgba(234, 249, 250, 1) 0%, rgba(221, 247, 247, 0.6) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+    box-shadow: inset 0 2px 5px rgba(255, 255, 255, 0.8), 0 5px 15px rgba(48, 155, 146, 0.1);
+    transition: all 0.4s ease;
+}
+
+.card-tecnologia:hover .icone-card {
+    transform: scale(1.08) rotate(-3deg);
+    background: linear-gradient(135deg, #309b92 0%, #036485 100%);
+}
+
+.card-tecnologia:hover .icone-card i {
+    color: #ffffff !important;
+}
+
+.card-tecnologia .icone-card i {
+    color: #309b92;
+    font-size: 1.8rem;
+    transition: color 0.3s ease;
+}
+
+.card-tecnologia h4 {
+    color: #036485;
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 0.8rem;
+    letter-spacing: -0.01em;
+}
+
+.card-tecnologia p {
+    color: #628e9b;
+    font-size: 0.9rem;
+    line-height: 1.65;
+    margin-bottom: 0;
+}
+
+/* BLOCO DE DESTAQUE: PARCERIA EMERGENT (ESTILO HERO CARD) */
+
+.emergent-box {
+    background: linear-gradient(135deg, #024e68 0%, #036485 50%, #258a81 100%);
+    box-shadow: 0 20px 50px rgba(3, 100, 133, 0.25);
+    position: relative;
+    overflow: hidden;
+    border-radius: 24px !important;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.emergent-box::before {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -20%;
+    width: 300px;
+    height: 300px;
+    background: rgba(126, 242, 234, 0.15);
+    filter: blur(60px);
+    border-radius: 50%;
+}
+
+.emergent-box::after {
+    content: "";
+    position: absolute;
+    bottom: -50px;
+    right: -50px;
+    width: 250px;
+    height: 250px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 50%;
+}
+
+.emergent-box h3 {
+    font-size: 2rem;
+    letter-spacing: -0.02em;
+    font-weight: 800;
+}
+
+.emergent-box h3 span {
+    color: #7ef2ea;
+    text-shadow: 0 0 20px rgba(126, 242, 234, 0.3);
+}
+
+.emergent-box p {
+    font-size: 1.02rem;
+    line-height: 1.75;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.emergent-badge {
+    background: rgba(255, 255, 255, 0.08);
+    border: 2px dashed rgba(126, 242, 234, 0.4);
+    width: 130px;
+    height: 130px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.emergent-box:hover .emergent-badge {
+    transform: scale(1.1) rotate(8deg);
+    background: rgba(126, 242, 234, 0.15);
+    border-color: rgba(126, 242, 234, 0.8);
+}
+
+.emergent-badge i {
+    color: #7ef2ea;
+    filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.2));
+}
+
+
+/* ========================================================== */
+/* SEÇÃO CONTATO / RODAPÉ - DESIGN PREMIUM (OLDHEALTHY)       */
+/* ========================================================== */
+
+.contato-section {
+    background: linear-gradient(180deg, #ffffff 0%, #f4fcfc 100%);
+    min-height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    padding: 6rem 0;
+}
+.fs-6 {
+    color:#024e68
+}
+
+.titulo-contato{
+    color: #024e68;
+}
+
+/* Cartão de Informações */
+.contato-info-card {
+    background: #ffffff;
+    border: 1px solid rgba(48, 155, 146, 0.15);
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(3, 100, 133, 0.04);
+}
+
+.icone-contato-mini {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 10px;
+    background: rgba(48, 155, 146, 0.1);
+    color: #309b92;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1rem;
+    flex-shrink: 0;
+}
+
+.contato-lista span {
+    color: #4e8290;
+    font-size: 0.95rem;
+}
+
+/* Ícones de Redes Sociais */
+.social-icon {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    background-color: rgba(48, 155, 146, 0.1);
+    color: #309b92;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.social-icon:hover {
+    background-color: #309b92;
+    color: #ffffff;
+    transform: translateY(-4px);
+    box-shadow: 0 6px 15px rgba(48, 155, 146, 0.25);
+}
+
+/* Cartão e Formulário */
+.form-contato-card {
+    background: #ffffff;
+    border: 1px solid rgba(48, 155, 146, 0.15);
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(3, 100, 133, 0.04);
+    position: relative;
+    overflow: hidden;
+}
+
+.form-contato-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(90deg, #309b92, #036485);
+}
+
+/* Inputs Personalizados do Formulário */
+.custom-input {
+    border: 1px solid rgba(48, 155, 146, 0.2) !important;
+    border-radius: 12px !important;
+    background-color: #f8fbfb !important;
+    color: #036485 !important;
+    transition: all 0.3s ease;
+}
+
+.custom-input:focus {
+    border-color: #309b92 !important;
+    box-shadow: 0 0 0 4px rgba(48, 155, 146, 0.12) !important;
+    background-color: #ffffff !important;
+}
+
+.form-floating label {
+    color: #568391;
+}
+
+/* Botão de Envio */
+.btn-enviar {
+    background: linear-gradient(135deg, #309b92 0%, #036485 100%);
+    border: none;
+    border-radius: 12px;
+    color: #ffffff;
+    transition: all 0.3s ease;
+    box-shadow: 0 8px 20px rgba(48, 155, 146, 0.2);
+}
+
+.btn-enviar:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 25px rgba(48, 155, 146, 0.35);
+    background: linear-gradient(135deg, #38b3a8 0%, #04769c 100%);
+    color: #ffffff;
+}
