@@ -133,38 +133,6 @@ section{
     min-height: 100dvh;
 }
 
-.section-funcionalidade{
-    background-image: url(../images/imagem2.png);
-    min-height: 100vh;
-    width: 100%;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-.texto-funcionalidade-esquerda h4 span{
-    display: block;
-}
-
-.texto-funcionalidade-esquerda h6{
-    color: #07ffffc9 ;
-}
-
-.texto-funcionalidade-esquerda p{
-    width: 45%;
-    color: rgba(255, 255, 255, 0.527);
-}
-
-.texto-funcionalidade-direita{
-    width: 90%;
-    position: relative;
-    bottom: 50px;
-}
-
-.texto-funcionalidade-direita h4{
-    color: #07ffffc9;
-}
-
 /* ========================= */
 /* SEÇÃO PROJETO */
 /* ========================= */
@@ -393,6 +361,257 @@ section{
     max-width: 90%;
 }
 
+.section-funcionalidade{
+    background-image: url(../images/imagem2.png);
+    min-height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.texto-funcionalidade-esquerda h4 span{
+    display: block;
+}
+
+.texto-funcionalidade-esquerda h6{
+    color: #07ffffc9 ;
+}
+
+.texto-funcionalidade-esquerda p{
+    width: 45%;
+    color: rgba(255, 255, 255, 0.527);
+}
+
+.texto-funcionalidade-direita{
+    width: 90%;
+    position: relative;
+    bottom: 50px;
+}
+
+.texto-funcionalidade-direita h4{
+    color: #07ffffc9;
+}
+
+.funcionalidade-section {
+    background: linear-gradient(135deg, #eaf9fa 0%, #d5f3f4 50%, #f4fcfc 100%);
+    min-height: 100dvh;
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    padding: 6rem 0;
+}
+
+/* Detalhes de luz e formas de fundo */
+.funcionalidade-section::before {
+    content: "";
+    position: absolute;
+    top: -80px;
+    left: -80px;
+    width: 380px;
+    height: 380px;
+    background: radial-gradient(circle, rgba(48, 155, 146, 0.25) 0%, rgba(255, 255, 255, 0) 70%);
+    border-radius: 50%;
+    z-index: 0;
+}
+
+.funcionalidade-section::after {
+    content: "";
+    position: absolute;
+    bottom: -100px;
+    right: -80px;
+    width: 420px;
+    height: 420px;
+    background: radial-gradient(circle, rgba(3, 100, 133, 0.2) 0%, rgba(255, 255, 255, 0) 70%);
+    border-radius: 50%;
+    z-index: 0;
+}
+
+.funcionalidade-section .container {
+    position: relative;
+    z-index: 1;
+}
+
+/* Cabeçalho Vívido */
+.funcionalidade-section .titulo-pequeno {
+    color: #309b92 !important;
+    font-weight: 800;
+    letter-spacing: 0.18rem;
+}
+
+.funcionalidade-section .titulo-pequeno span {
+    background-color: #309b92 !important;
+    height: 0.15rem;
+}
+
+.titulo-func {
+    color: #024e68 !important;
+    font-weight: 800;
+    letter-spacing: -0.025em;
+    line-height: 1.15;
+}
+
+.titulo-func span {
+    background: linear-gradient(135deg, #309b92 0%, #036485 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+}
+
+.texto-cabecalho-func {
+    color: #036485 !important;
+    line-height: 1.7;
+    max-width: 90%;
+    font-weight: 500;
+}
+
+/* Container do Carrossel com Efeito de Sombra e Máscara */
+.carousel-infinite-wrapper {
+    width: 100%;
+    padding: 1.5rem 0;
+    mask-image: linear-gradient(to right, transparent, black 4%, black 96%, transparent);
+    -webkit-mask-image: linear-gradient(to right, transparent, black 4%, black 96%, transparent);
+}
+
+.carousel-infinite-track {
+    width: max-content;
+    animation: scrollContinuous 25s linear infinite;
+}
+
+.carousel-infinite-wrapper:hover .carousel-infinite-track {
+    animation-play-state: paused;
+}
+
+@keyframes scrollContinuous {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+}
+
+.carousel-card-item {
+    width: 330px;
+    padding: 0 0.8rem;
+    flex-shrink: 0;
+}
+
+@media (min-width: 768px) {
+    .carousel-card-item {
+        width: 370px;
+    }
+}
+
+/* CARDS COLORIDOS E VIBRANTES */
+.card-funcionalidade {
+    background: linear-gradient(160deg, #ffffff 0%, #f0fafb 100%);
+    border: 2px solid rgba(48, 155, 146, 0.28) !important;
+    border-radius: 24px;
+    box-shadow: 0 12px 30px rgba(3, 100, 133, 0.08) !important;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+/* Faixa Superior de Gradiente Vibrante */
+.card-funcionalidade::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(90deg, #309b92 0%, #036485 50%, #7ef2ea 100%);
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+}
+
+.card-funcionalidade:hover {
+    transform: translateY(-10px) scale(1.02);
+    border-color: #309b92 !important;
+    box-shadow: 0 20px 45px rgba(48, 155, 146, 0.25) !important;
+}
+
+.card-funcionalidade:hover::before {
+    opacity: 1;
+}
+
+/* Ícone com Gradiente Colorido e Brilho (Glow) */
+.icone-card-func {
+    width: 4.2rem;
+    height: 4.2rem;
+    border-radius: 18px;
+    background: linear-gradient(135deg, #309b92 0%, #036485 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 8px 20px rgba(48, 155, 146, 0.35);
+    transition: transform 0.4s ease;
+}
+
+.card-funcionalidade:hover .icone-card-func {
+    transform: rotate(-6deg) scale(1.1);
+}
+
+.icone-card-func i {
+    color: #ffffff !important;
+    font-size: 1.9rem;
+}
+
+/* Badge estilizada */
+.badge-card {
+    display: inline-block;
+    background: rgba(48, 155, 146, 0.15);
+    color: #036485;
+    padding: 0.3rem 0.8rem;
+    border-radius: 30px;
+    font-size: 0.75rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    border: 1px solid rgba(48, 155, 146, 0.3);
+}
+
+.card-funcionalidade h3 {
+    color: #024e68;
+    font-size: 1.4rem;
+    font-weight: 800;
+    letter-spacing: -0.01em;
+}
+
+.card-funcionalidade p {
+    color: #036485;
+    font-size: 0.93rem;
+    line-height: 1.65;
+    margin-bottom: 0;
+}
+
+/* CARD SOS (DESTAQUE VERMELHO/AZUL VIBRANTE) */
+.card-sos {
+    background: linear-gradient(160deg, #ffffff 0%, #fff0f2 100%);
+    border: 2px solid rgba(220, 53, 69, 0.35) !important;
+}
+
+.card-sos::before {
+    background: linear-gradient(90deg, #dc3545, #309b92);
+}
+
+.icone-sos {
+    background: linear-gradient(135deg, #dc3545 0%, #a71d2a 100%);
+    box-shadow: 0 8px 20px rgba(220, 53, 69, 0.35);
+}
+
+.badge-sos {
+    background: rgba(220, 53, 69, 0.15);
+    color: #dc3545;
+    border-color: rgba(220, 53, 69, 0.3);
+}
+
+.card-sos:hover {
+    border-color: #dc3545 !important;
+    box-shadow: 0 20px 45px rgba(220, 53, 69, 0.22) !important;
+}
+
+
+
 /* SEÇÃO TECNOLOGIA */
 
 .tecnologia-section {
@@ -590,81 +809,237 @@ section{
     filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.2));
 }
 
+/* ========================================================== */
+/* SEÇÃO EQUIPE - DESIGN MAIS COLORIDO & VIBRANTE (OLDHEALTHY) */
+/* ========================================================== */
+
+.equipe-section {
+    background: linear-gradient(135deg, #eaf9fa 0%, #d8f5f6 50%, #ffffff 100%);
+    min-height: 100dvh;
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    padding: 6rem 0;
+}
+
+/* Detalhes de luz no fundo para dar mais cor à página */
+.equipe-section::before {
+    content: "";
+    position: absolute;
+    top: -100px;
+    right: -100px;
+    width: 400px;
+    height: 400px;
+    background: radial-gradient(circle, rgba(48, 155, 146, 0.2) 0%, rgba(255, 255, 255, 0) 70%);
+    border-radius: 50%;
+    z-index: 0;
+}
+
+.equipe-section::after {
+    content: "";
+    position: absolute;
+    bottom: -100px;
+    left: -100px;
+    width: 450px;
+    height: 450px;
+    background: radial-gradient(circle, rgba(3, 100, 133, 0.18) 0%, rgba(255, 255, 255, 0) 70%);
+    border-radius: 50%;
+    z-index: 0;
+}
+
+.equipe-section .container {
+    position: relative;
+    z-index: 1;
+}
+
+.equipe-section .titulo-pequeno {
+    color: #309b92 !important;
+    font-weight: 800;
+    letter-spacing: 0.15rem;
+}
+
+.equipe-section .titulo-pequeno span {
+    background-color: #309b92 !important;
+}
+
+.titulo-equipe {
+    color: #024e68 !important;
+    font-weight: 800;
+    letter-spacing: -0.025em;
+    line-height: 1.15;
+}
+
+.titulo-equipe span {
+    background: linear-gradient(135deg, #309b92 0%, #036485 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+}
+
+/* Cartão da Equipe mais Colorido */
+.card-equipe {
+    background: linear-gradient(160deg, #ffffff 0%, #f0fafb 100%);
+    border: 2px solid rgba(48, 155, 146, 0.25) !important;
+    border-radius: 24px;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    box-shadow: 0 12px 30px rgba(3, 100, 133, 0.08) !important;
+}
+
+/* Faixa superior em gradiente vibrante */
+.card-equipe::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(90deg, #309b92 0%, #036485 50%, #7ef2ea 100%);
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+}
+
+.card-equipe:hover {
+    transform: translateY(-10px) scale(1.02);
+    border-color: #309b92 !important;
+    box-shadow: 0 20px 45px rgba(48, 155, 146, 0.22) !important;
+}
+
+.card-equipe:hover::before {
+    opacity: 1;
+}
+
+/* Moldura e Brilho da Foto de Perfil */
+.foto-perfil-wrapper {
+    width: 125px;
+    height: 125px;
+    border-radius: 50%;
+    padding: 4px;
+    background: linear-gradient(135deg, #309b92 0%, #036485 100%);
+    box-shadow: 0 8px 22px rgba(48, 155, 146, 0.35);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.card-equipe:hover .foto-perfil-wrapper {
+    transform: scale(1.08) rotate(3deg);
+    box-shadow: 0 12px 28px rgba(48, 155, 146, 0.5);
+}
+
+.foto-perfil-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-color: #eaf9fa;
+    border: 2px solid #ffffff;
+}
+
+.nome-membro {
+    color: #024e68;
+    font-size: 1.3rem;
+    font-weight: 800;
+    margin-bottom: 0.3rem;
+    letter-spacing: -0.01em;
+}
+
+/* Cargo em estilo Badge Destaque */
+.cargo-membro {
+    display: inline-block;
+    background: rgba(48, 155, 146, 0.15);
+    color: #036485;
+    padding: 0.25rem 0.8rem;
+    border-radius: 30px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    border: 1px solid rgba(48, 155, 146, 0.3);
+}
+
+.bio-membro {
+    color: #036485;
+    font-size: 0.92rem;
+    line-height: 1.65;
+    font-weight: 400;
+}
+
+/* Ícones Sociais Vibrantes */
+.social-icon-mini {
+    width: 2.4rem;
+    height: 2.4rem;
+    border-radius: 50%;
+    background: linear-gradient(135deg, rgba(234, 249, 250, 1) 0%, rgba(48, 155, 146, 0.2) 100%);
+    border: 1px solid rgba(48, 155, 146, 0.3);
+    color: #036485;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    font-size: 1rem;
+}
+
+.social-icon-mini:hover {
+    background: linear-gradient(135deg, #309b92 0%, #036485 100%);
+    color: #ffffff !important;
+    transform: translateY(-4px) scale(1.1);
+    box-shadow: 0 6px 15px rgba(48, 155, 146, 0.35);
+    border-color: transparent;
+}
+
 
 /* ========================================================== */
-/* SEÇÃO CONTATO / RODAPÉ - DESIGN PREMIUM (OLDHEALTHY)       */
+/* SEÇÃO CONTATO / RODAPÉ - DESIGN ESCURO INVERTIDO (OLDHEALTHY) */
 /* ========================================================== */
 
 .contato-section {
-    background: linear-gradient(180deg, #ffffff 0%, #f4fcfc 100%);
+    background: linear-gradient(180deg, #024e68 0%, #036485 100%);
     min-height: 100dvh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     position: relative;
     padding: 6rem 0;
-}
-.fs-6 {
-    color:#024e68
-}
-
-.titulo-contato{
-    color: #024e68;
-}
-
-/* Cartão de Informações */
-.contato-info-card {
-    background: #ffffff;
-    border: 1px solid rgba(48, 155, 146, 0.15);
-    border-radius: 20px;
-    box-shadow: 0 10px 30px rgba(3, 100, 133, 0.04);
-}
-
-.icone-contato-mini {
-    width: 2.5rem;
-    height: 2.5rem;
-    border-radius: 10px;
-    background: rgba(48, 155, 146, 0.1);
-    color: #309b92;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.1rem;
-    flex-shrink: 0;
-}
-
-.contato-lista span {
-    color: #4e8290;
-    font-size: 0.95rem;
-}
-
-/* Ícones de Redes Sociais */
-.social-icon {
-    width: 2.5rem;
-    height: 2.5rem;
-    border-radius: 50%;
-    background-color: rgba(48, 155, 146, 0.1);
-    color: #309b92;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none;
-    transition: all 0.3s ease;
-}
-
-.social-icon:hover {
-    background-color: #309b92;
     color: #ffffff;
-    transform: translateY(-4px);
-    box-shadow: 0 6px 15px rgba(48, 155, 146, 0.25);
 }
 
-/* Cartão e Formulário */
+/* Cabeçalho */
+.contato-section .titulo-pequeno {
+    color: #7ef2ea !important;
+    font-weight: 700;
+}
+
+.contato-section .titulo-pequeno span {
+    background-color: #7ef2ea !important;
+}
+
+.titulo-contato {
+    color: #ffffff !important;
+    font-weight: 800;
+    letter-spacing: -0.025em;
+    line-height: 1.15;
+}
+
+.titulo-contato span {
+    color: #7ef2ea;
+    display: inline-block;
+}
+
+.texto-cabecalho-contato {
+    color: rgba(255, 255, 255, 0.85) !important;
+    line-height: 1.7;
+    max-width: 90%;
+    font-weight: 400;
+}
+
+/* Cartões de Informação e Formulário com Glassmorphism em tom escuro */
+.contato-info-card,
 .form-contato-card {
-    background: #ffffff;
-    border: 1px solid rgba(48, 155, 146, 0.15);
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.15);
     border-radius: 20px;
-    box-shadow: 0 10px 30px rgba(3, 100, 133, 0.04);
+    backdrop-filter: blur(12px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
     position: relative;
     overflow: hidden;
 }
@@ -676,41 +1051,95 @@ section{
     left: 0;
     width: 100%;
     height: 4px;
-    background: linear-gradient(90deg, #309b92, #036485);
+    background: linear-gradient(90deg, #309b92, #7ef2ea);
+}
+
+.text-light-50 {
+    color: rgba(255, 255, 255, 0.75) !important;
+}
+
+/* Ícones de Contato */
+.icone-contato-mini {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 10px;
+    background: rgba(126, 242, 234, 0.15);
+    color: #7ef2ea;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1rem;
+    flex-shrink: 0;
+}
+
+.contato-lista span {
+    color: #ffffff;
+    font-size: 0.95rem;
+}
+
+/* Redes Sociais */
+.social-icon {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #7ef2ea;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.social-icon:hover {
+    background-color: #309b92;
+    color: #ffffff;
+    transform: translateY(-4px);
+    box-shadow: 0 6px 15px rgba(48, 155, 146, 0.4);
 }
 
 /* Inputs Personalizados do Formulário */
 .custom-input {
-    border: 1px solid rgba(48, 155, 146, 0.2) !important;
+    border: 1px solid rgba(255, 255, 255, 0.2) !important;
     border-radius: 12px !important;
-    background-color: #f8fbfb !important;
-    color: #036485 !important;
+    background-color: rgba(255, 255, 255, 0.12) !important;
+    color: #ffffff !important;
     transition: all 0.3s ease;
 }
 
 .custom-input:focus {
-    border-color: #309b92 !important;
-    box-shadow: 0 0 0 4px rgba(48, 155, 146, 0.12) !important;
-    background-color: #ffffff !important;
+    border-color: #7ef2ea !important;
+    box-shadow: 0 0 0 4px rgba(126, 242, 234, 0.2) !important;
+    background-color: rgba(255, 255, 255, 0.2) !important;
 }
 
 .form-floating label {
-    color: #568391;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.custom-input:focus ~ label,
+.custom-input:not(:placeholder-shown) ~ label {
+    color: #7ef2ea !important;
 }
 
 /* Botão de Envio */
 .btn-enviar {
-    background: linear-gradient(135deg, #309b92 0%, #036485 100%);
-    border: none;
+    background: linear-gradient(135deg, #309b92 0%, #1e7d73 100%);
+    border: 1px solid rgba(126, 242, 234, 0.3);
     border-radius: 12px;
     color: #ffffff;
     transition: all 0.3s ease;
-    box-shadow: 0 8px 20px rgba(48, 155, 146, 0.2);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
 }
 
 .btn-enviar:hover {
     transform: translateY(-3px);
-    box-shadow: 0 12px 25px rgba(48, 155, 146, 0.35);
-    background: linear-gradient(135deg, #38b3a8 0%, #04769c 100%);
+    box-shadow: 0 12px 25px rgba(48, 155, 146, 0.4);
+    background: linear-gradient(135deg, #3cbdaf 0%, #289a8f 100%);
     color: #ffffff;
 }
+
+.hover-white:hover {
+    color: #ffffff !important;
+}
+
